@@ -1,0 +1,134 @@
+:root{
+    --mainColor: #0e73c5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.game{
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+}
+.game .nameGame{
+    background-color: var(--mainColor);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+.game .container{
+    width: 1000px;
+    margin: auto;
+}
+.game .container .info{
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.game .container .info span{
+    color: var(--mainColor);
+    font-weight: bold;
+
+}
+.game .container .info span::before{
+    content: "[ ";
+}
+.game .container .info span::after{
+    content: " ]";
+}
+.game .container .startButton{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: #009688;
+    font-weight:bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.game .container .theWord{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--mainColor);
+    user-select: none;
+}
+.game .container input{
+    width: 100%;
+    border: 4px var(--mainColor) solid;
+    text-transform: capitalize;
+    caret-color: var(--mainColor);
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+.game .container input:focus{
+    outline: none;
+}
+.game .container .words{
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.game .container .words div{
+    margin: 0 10px 10px 0;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    user-select: none;
+}
+.game .container .control{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.game .container .control span{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.bad,
+.good{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+.stop{
+    pointer-events: none;
+}
+
+
+
+
+
